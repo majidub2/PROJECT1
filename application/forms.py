@@ -10,7 +10,7 @@ class Addreviews(FlaskForm): #many
     title = StringField("review title", validators=[InputRequired())
     review = StringField("review body", validators=[InputRequired())
     rating = IntegerField('Rating (1-5)',validators=[InputRequired(),NumberRange(min=1, max=5)])
-    restaurants_ID = IntegerField('Restaurant to review')
+    restaurants_ID = SelectField('Restaurant to review', choices=[])
     submit = SubmitField('Submit your review!')
 
 # class Addrestaraunts(FlaskForm):

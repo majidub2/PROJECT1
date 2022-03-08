@@ -1,0 +1,24 @@
+{% extends 'layout.html' %}
+{% block body %}
+
+
+<br><br>
+Original review title: {{ review.title}}
+<br>
+Original review body: {{ review.review}}
+<br>
+Original rating: {{ review.rating }}
+<br><br>
+
+<form method='POST' action ='' >
+
+    {{ form.hidden_tag() }}
+    <br>
+    {{ form.body.label  }} {{ form.body }} 
+    <br>
+    {{ form.rating.label }} {{form.rating }}
+    <br>
+    {{ form.submit }}
+    <br><br>
+    </form>
+{% endblock body %}
