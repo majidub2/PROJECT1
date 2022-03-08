@@ -1,0 +1,23 @@
+{% extends 'layout.html' %}
+{% block body %}
+<h2>{{ Make your voice heard and add your own review! }}</h2>
+<br>
+<div class="form">
+    <form method="POST" action="">
+        {{ form.hidden_tag() }}
+        <br>
+        {{ form.title.label }} {{ form.title }}
+        <br>
+        {{ form.review.label }} {{ form.review }}
+        <br>
+        {{ form.rating.label }} {{ form.rating }}
+        <br>
+        {{ form.restaurants_ID.label }} {{ form.restaurants_ID }}
+        <br>
+        {{ form.submit }}
+    </form>
+    {% if message %}
+    {{ message }}
+    {% endif %}
+</div>
+{% endblock body %}

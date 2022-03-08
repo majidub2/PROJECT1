@@ -1,7 +1,7 @@
 from application import db
 
 
-class restaurants(db.Model): #ONE restaurant
+class Restaurants(db.Model): #ONE restaurant
     pk = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(100), nullable=False)
     cuisine = db.Column(db.String(100), nullable=False)
@@ -11,7 +11,7 @@ class restaurants(db.Model): #ONE restaurant
     
 
 
-class reviews(db.Model): #MANY reviews
+class Reviews(db.Model): #MANY reviews
     pk = db.Column(db.Integer, primary_key=True) 
     title = db.column(db.String(50, nullable=False)
     review = db.Column(db.String(100), nullable=False)
