@@ -1,8 +1,7 @@
-<<<<<<< HEAD
 {% extends 'layout.html' %}
 {% block body %}
 
-<h2>Reviews</h2>
+<h2> Reviews: </h2>
 {% for review in all_reviews %}
     <br><br>
     title of review:
@@ -24,21 +23,10 @@
     <br><br>
     <form action="{{ url_for('delete', id = review.id) }}">
         <input type=submit value="Delete">
-
     </form>
+    <br><br>
+    <br><br>
+
     
-=======
-<html>
-    <head>
-        <title> Welcome to Restaraunt Reviews !! </title>
-    </head>
-    <body>
-        <body style = "background-color: lightpink;"></body>
-        <h1>!! </h1>
-        <a href="{{ url_for('home') }}">Home </a> <br>
-        <a href="{{ url_for('create') }}">Make a new review</a> <br>
-        {% block body %}
-        {% endblock body %}
-    </body>
-</html>
->>>>>>> a8e790528316bef7a003e4e95c804f3db7b8068d
+    {% endfor %}
+    {% endblock body %}
