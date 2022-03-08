@@ -1,3 +1,33 @@
+<<<<<<< HEAD
+{% extends 'layout.html' %}
+{% block body %}
+
+<h2>Reviews</h2>
+{% for review in all_reviews %}
+    <br><br>
+    title of review:
+    {{ reviews.title }}
+    <br><br>
+    Review: 
+    {{ reviews.review }}
+    <br><br>
+    Rating: 
+    {{ reviews.rating }}
+    {% endif %}
+    {% endfor %}
+    <br><br>
+    <br><br>
+    <form action="{{ url_for('update', id = review.id) }}">
+        <input type=submit value="Update">
+    </form>
+    <br><br>
+    <br><br>
+    <form action="{{ url_for('delete', id = review.id) }}">
+        <input type=submit value="Delete">
+
+    </form>
+    
+=======
 <html>
     <head>
         <title> Welcome to Restaraunt Reviews !! </title>
@@ -11,3 +41,4 @@
         {% endblock body %}
     </body>
 </html>
+>>>>>>> a8e790528316bef7a003e4e95c804f3db7b8068d
