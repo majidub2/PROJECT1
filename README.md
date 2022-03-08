@@ -1,18 +1,12 @@
 
+# *****RESTAURANT REVIEWS*****
+
+
+
 #### Database
 
 
 <img width="771" alt="Screenshot 2022-03-08 at 00 12 48" src="https://user-images.githubusercontent.com/99325840/157140102-b6b9c18b-2ddd-48de-8dbe-2d561e572c81.png">
-
-
-
-
-
-
-
-# *****RESTAURANT REVIEWS*****
-
-
 
 
 
