@@ -5,7 +5,7 @@ wtforms
 pytest
 flask-testing
 pytest-cov
-itsdangerous==1.0.1
+itsdangerous==2.0.1
 flask==1.1.4
 markupsafe==1.1.1
 
