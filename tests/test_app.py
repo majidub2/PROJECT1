@@ -29,21 +29,21 @@ class TestBase(TestCase):
         db.drop_all()
 
 
-class TestHomepage(TestBase):
+class TestHomepage(TestBase): # GET: HOMEPAGE
     def test_homepage_get(self):
         response = self.client.get(url_for('home'))
         self.assert200(response)
         self.assertIn(b'Sample title', response.data)
 
 
-class TestcreateGET(TestBase):
+class TestcreateGET(TestBase): #GET: CREATEREVIEW
     def test_createreview_get(self):
         response = self.client.get(url_for('home'))
         self.assert200(response)
         self.assertIn(b'Sample title', response.data)
  
 
-class TestcreatePOST(TestBase):
+class TestcreatePOST(TestBase): #POST: CREATEREVIEW
     def test_createreview_post(self):
         response = self.client.post(
             url_for('createreview'),
@@ -54,14 +54,14 @@ class TestcreatePOST(TestBase):
         self.assertIn(b'Sample title 2', response.data)
 
 
-class TestaddrestaurantsGET(TestBase):
+class TestaddrestaurantsGET(TestBase): #GET: ADDRESTAURANT
     def test_addrestaurants_get(self):
         response = self.client.get(url_for('home'))
         self.assert200(response)
         self.assertIn(b'Sample name', response.data)
 
 
-class TestaddrestaurantsPOST(TestBase):
+class TestaddrestaurantsPOST(TestBase): #POST: ADDRESTAURANT
     def test_addrestaurants_post(self):
         response = self.client.post(
             url_for('addrestaurants'),
@@ -71,8 +71,28 @@ class TestaddrestaurantsPOST(TestBase):
         self.assert200(response)
         self.assertIn(b'Sample name 2', response.data)
 
-# class TestupdatereviewGET(TestBase):
-#     def test_updatereview_get(self):
-#         response = self.client.get(url_for('updatereview (pk)'))
-#         self.assert200(response)
-#         self.assertIn(b'Sample name', response.data)
+class TestupdatereviewGET(TestBase): #GET: UPDATEREVIEW
+    def test_updatereview_get(self):
+        response = self.client.get(url_for('updatereview', pk =1))
+        self.assert200(response)
+        self.assertIn(b'Sample review', response.data)
+
+    
+class TestupdatereviewsPOST(TestBase): #POST : UPDATEREVIEW
+    def test_updatereview(self):
+        response = self.client.post(
+            url_for("updatereview", pk=1),
+            data= dict( review = "Sample review 2" ,rating=3), follow_redirects=True)
+        self.assertIn(b"Sample review 2", response.data)
+        self.assertIn(b"3", response.data)
+
+
+
+class TestDelete(TestBase):
+    def test_deletereview(self):
+        response = self.client.post(
+            url_for("delete", pk=1),
+            follow_redirects=True
+        )
+        self.assertNotIn(b"Sample title", response.data)
+        self.assertNotIn(b"Sample review", response.data)
