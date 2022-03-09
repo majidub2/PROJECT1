@@ -15,6 +15,7 @@ Once they have added a review, their review will be displayed on the homepage, a
 
 To make my application, I needed a restaurants table and a reviews table. They have a one to many relationship between them as one restaurant can have many reviews about its food, whereas every review is referencing just one restaurant. I began with the ERD shown above, however, I made some changes to mine on day 3 of my project. I realised that the lengths of my fields was not suitable for my application, as 100 characters was too much for restaurant name and cuisine type, whilst 100 was too small for the body of someones review. I thus changed these lengths amd also added in my module validators so that I could use this table as a visual aid during development.
 
+<img width="762" alt="Screenshot 2022-03-09 at 16 19 01" src="https://user-images.githubusercontent.com/99325840/157501000-c18498f8-790f-42a0-87e2-74c9cc1e34cf.png">
 
 
 ## *Planning:
