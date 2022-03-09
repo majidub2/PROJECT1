@@ -33,10 +33,20 @@ The visualisation of workload has allowed me to spot bottlenecks where they woul
 
 
 ## *CI Pipeline
+
+<img width="409" alt="Screenshot 2022-03-09 at 17 43 02" src="https://user-images.githubusercontent.com/99325840/157500633-0830e397-f524-47ae-b990-61e5f5449816.png">
+
+
 ## *Risk Assessment:
 
 <img width="757" alt="Screenshot 2022-03-08 at 00 12 28" src="https://user-images.githubusercontent.com/99325840/157140053-385c7258-c166-47d9-9194-9ca1fa33274e.png">
+
+As my project started coming along, I started to notice more and more potential risks which could be associated with my application, so I began to add those in to my risk assessment. I also realised that visually, having them listen in bullet points was not very engaging, and that there was no way of rating the severity each risk could have, thus prompting me to put my risks into a matrix style with numeric values for severity.
+
 ## *Front End
 ## *Testing
 
 ## **Known Issues/Areas Of Improvement**
+* Individuals cannot delete/update restaurant entries that they make
+* More time and attention could have been taken to making the website look visually more appealing
+* Next time, I could perhaps add a 'search' route, so that they can search for a review by keyword
