@@ -61,7 +61,7 @@ def addrestaurants():
 @app.route('/updatereview/<int:pk>', methods=['GET', 'POST'])
 def updatereview(pk):
     form = AddReviews()
-    review = Reviews.query.filter_by(pk=pk).first()
+    review = Reviews.query.filter_by( pk=pk ).first()
     if request.method == 'POST':
         review.review = form.review.data
         review.rating = form.rating.data
