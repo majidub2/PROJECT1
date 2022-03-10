@@ -1,0 +1,19 @@
+{% extends 'layout.html' %}
+{% block body %}
+<h2>Add a restaurant to review!</h2>
+<br>
+<div class="form">
+    <form method="POST" action="">
+        {{ form.hidden_tag() }}
+        <br>
+        {{ form.name.label }} {{ form.name }}
+        <br>
+        {{ form.cuisine.label }} {{ form.cuisine }}
+        <br>
+        {{ form.submit }}
+    </form>
+    {% if message %}
+    {{ message }}
+    {% endif %}
+</div>
+{% endblock body %}
