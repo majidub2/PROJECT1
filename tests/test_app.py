@@ -52,7 +52,7 @@ class TestcreatePOST(TestBase): #POST: CREATEREVIEW
         )
         self.assert200(response)
         self.assertIn(b'Sample title 2', response.data)
-
+ 
 
 class TestaddrestaurantsGET(TestBase): #GET: ADDRESTAURANT
     def test_addrestaurants_get(self):
