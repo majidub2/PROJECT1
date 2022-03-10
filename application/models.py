@@ -17,5 +17,3 @@ class Reviews(db.Model): #MANY reviews
     review = db.Column(db.String(1000), nullable=False)
     rating = db.Column(db.Integer, nullable=False)
     restaurants_ID = db.Column(db.Integer, db.ForeignKey('restaurants.pk'))
-    def __str__(self):
-        return f"The restaurant scored a {self.rating}, with the following review, titled \n {self.title}: \n {self.review}"

@@ -12,13 +12,6 @@ def home():
     return render_template('homepage.html', all_reviews = all_reviews, all_restaurants = all_restaurants)
     
 
-@app.route('/search=<keyword>')
-def search(keyword):
-    data = db.session.execute(F'SELECT * FROM reviews WHERE desc LIKE '%{keyword}%'')
-    data = list(data)
-    num_results = len(data)
-    return render_template('search.html', res = [str(res) for res in data], n = num_results)
-
 @app.route('/createreview', methods=['GET', 'POST'])
 def createreview():
     form = AddReviews()
@@ -41,14 +34,14 @@ def createreview():
 def addrestaurants():
     form = AddRestaurants()
     if request.method == "POST":
-        if not form.validate_on_submit():
-            message = "Please enter a valid name"
-            try:
-                err = eval(f"form.name.errors[-1]")
-            except IndexError:
-                err = ""
-            message += err + ", "
-            return render_template('add.html', form = form, message = message)
+        # if not form.validate_on_submit():
+        #     # message = "Please enter a valid name"
+        #     # try:
+            #     err = eval(f"form.name.errors[-1]")
+            # except IndexError:
+            #     err = ""
+            # message += err + ", "
+            # return render_template('add.html', form = form, message = message)
         new_restaurants = Restaurants(
             name = form.name.data,
             cuisine = form.cuisine.data)

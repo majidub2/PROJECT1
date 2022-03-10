@@ -1,6 +1,6 @@
 from flask_wtf import FlaskForm
 from wtforms import StringField, IntegerField, SubmitField, SelectField
-from wtforms.validators import Length, NumberRange, InputRequired
+from wtforms.validators import Length, NumberRange, InputRequired, Regexp
 from application.models import Reviews, Restaurants
 
 
