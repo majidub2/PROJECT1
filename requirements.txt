@@ -5,6 +5,5 @@ wtforms
 pytest
 flask-testing
 pytest-cov
-flask==1.1.4
-markupsafe==1.1.1
+flask
 
