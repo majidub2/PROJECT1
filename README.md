@@ -1,5 +1,8 @@
 # Restaurant Reviews
 
+
+
+
 ## *App Design:
 I created a restaurant reviewing application, where users can access the homepage and add a restaurant to be reviewed by others, and/or  add their own review, which can be either updated or deleted. 
 
@@ -42,7 +45,7 @@ The visualisation of workload has allowed me to spot bottlenecks where they woul
 <img width="409" alt="Screenshot 2022-03-09 at 17 43 02" src="https://user-images.githubusercontent.com/99325840/157500633-0830e397-f524-47ae-b990-61e5f5449816.png">
 The purpose of the CI pipeline approach is to allow developers to integrate new code easily and continuously.
 
- I have demonstrated the usage of a CI pipeline in this project. Firstly, I begin by finding my ToDo tasks on my Jira board, followed by working on my application in python via visual studio code. When new features are made, id push them using Git. This code is then automatically pulled, tested and deployed via the Jenkins server. Any test failures/issues can be seen in the Jenkins Console Output.
+ I have demonstrated the usage of a CI pipeline in this project. Firstly, I begin by finding my ToDo tasks on my Jira board, followed by working on my application in python via visual studio code. When new features are made, id commit and push them to a remote repository using Git. This code is then automatically pulled, tested and deployed by a Jenkins server via a webhook, triggered by code commits in the version control repository or when prompted to run. Any test failures/issues can be seen in the Jenkins Console Output. 
 
 
 ## *Risk Assessment:
