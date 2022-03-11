@@ -24,8 +24,6 @@ To make my application, I needed a restaurants table and a reviews table. They h
 
 On day one of  beginning my project, I have created a kanban style board on Jira software. This visually depicts my workload at a glance and allows me to keep track of what has already been done and what is to do. I have split my ToDos into several sections. The first were the minimum viable product requirements that were needed for me to pass the project. I wanted these seperate as they were the most important tasks for me to consider. I also had User Stories, which helped me build my application by thinking in the eyes of the end user. I also had inprogress and done sections, which were not populated at this point in time.
 
-### Day 2:
-
 ### Day 3:
 
 <img width="1425" alt="Screenshot 2022-03-09 at 16 46 42" src="https://user-images.githubusercontent.com/99325840/157779928-44ab69e1-8a01-4ae0-895c-6bc73f3f352a.png">
@@ -33,6 +31,10 @@ On day one of  beginning my project, I have created a kanban style board on Jira
 
 The visualisation of workload has allowed me to spot bottlenecks where they would potentially occur,for example, I had realised that I may not have much time to complete the testing and Jenkins sections of the project if I did not move at a faster pace.
 
+
+## Final Day:
+
+<img width="1158" alt="Screenshot 2022-03-11 at 01 48 20" src="https://user-images.githubusercontent.com/99325840/157786446-70408b92-5a4e-4a4f-8915-d26c37371a92.png">
 
 
 ## *CI Pipeline
