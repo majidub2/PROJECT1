@@ -15,7 +15,7 @@ class TestBase(TestCase):
             WTF_CSRF_ENABLED = False
         )
         return app
-
+ 
     def setUp(self): #run BEFORE each test (the 'many' side must include the fk)
         db.create_all()
         sample_review = Reviews( title="Sample title", review="Sample review", rating = 3, restaurants_ID = 2 )
@@ -23,12 +23,12 @@ class TestBase(TestCase):
         db.session.add(sample_review)
         db.session.add(sample_restaurant)
         db.session.commit()
-    
+     
     def tearDown(self): #run AFTER each test to "clean up" for the nxt test
         db.session.remove()
         db.drop_all()
 
-
+  
 class TestHomepage(TestBase): # GET: HOMEPAGE
     def test_homepage_get(self):
         response = self.client.get(url_for('home'))
