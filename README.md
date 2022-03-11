@@ -47,6 +47,8 @@ The visualisation of workload has allowed me to spot bottlenecks where they woul
 
 As my project started coming along, I started to notice more and more potential risks which could be associated with my application, so I began to add those in to my risk assessment. I also realised that visually, having them listen in bullet points was not very engaging, and that there was no way of rating the severity each risk could have, thus prompting me to put my risks into a matrix style with numeric values for severity.
 
+<img width="1162" alt="Screenshot 2022-03-11 at 01 02 32" src="https://user-images.githubusercontent.com/99325840/157782592-204bbe46-94e5-43c6-b3a4-9d5767a94329.png">
+
 
 ## *Testing
  <img width="632" alt="Screenshot 2022-03-11 at 00 56 38" src="https://user-images.githubusercontent.com/99325840/157782510-ae751b02-c16b-493c-83c2-b595ad060670.png">
