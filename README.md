@@ -28,6 +28,8 @@ On day one of  beginning my project, I have created a kanban style board on Jira
 
 ### Day 3:
 
+<img width="1425" alt="Screenshot 2022-03-09 at 16 46 42" src="https://user-images.githubusercontent.com/99325840/157779928-44ab69e1-8a01-4ae0-895c-6bc73f3f352a.png">
+
 
 The visualisation of workload has allowed me to spot bottlenecks where they would potentially occur,for example, I had realised that I may not have much time to complete the testing and Jenkins sections of the project if I did not move at a faster pace.
 
