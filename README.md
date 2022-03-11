@@ -38,7 +38,9 @@ The visualisation of workload has allowed me to spot bottlenecks where they woul
 ## *CI Pipeline
 
 <img width="409" alt="Screenshot 2022-03-09 at 17 43 02" src="https://user-images.githubusercontent.com/99325840/157500633-0830e397-f524-47ae-b990-61e5f5449816.png">
+The purpose of the CI pipeline approach is to allow developers to integrate new code easily and continuously.
 
+ I have demonstrated the usage of a CI pipeline in this project. Firstly, I begin by finding my ToDo tasks on my Jira board, followed by working on my application in python via visual studio code. When new features are made, id push them using Git. This code is then automatically pulled, tested and deployed via the Jenkins server. Any test failures/issues can be seen in the Jenkins Console Output.
 
 
 ## *Risk Assessment:
@@ -51,6 +53,9 @@ As my project started coming along, I started to notice more and more potential 
 
 
 ## *Testing
+
+U
+ I sought out to test the GET requests for all of my create, read, update and delete routes, as well as the POST requests for create and update routes, which led me to achieve 84% coverage initially. After further analysing which lines of code were not being excecuted by the tests, I realised that I had a lot of useless lines of code within my application, which I got rid of thus making my routes much easier to read and increasing my test coverage. 
  <img width="632" alt="Screenshot 2022-03-11 at 00 56 38" src="https://user-images.githubusercontent.com/99325840/157782510-ae751b02-c16b-493c-83c2-b595ad060670.png">
 
 
