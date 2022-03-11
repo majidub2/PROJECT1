@@ -61,6 +61,8 @@ As my project started coming along, I started to notice more and more potential 
 
 U
  I sought out to test the GET requests for all of my create, read, update and delete routes, as well as the POST requests for create and update routes, which led me to achieve 84% coverage initially. After further analysing which lines of code were not being excecuted by the tests, I realised that I had a lot of useless lines of code within my application, which I got rid of thus making my routes much easier to read and increasing my test coverage. 
+ 
+ 
  <img width="632" alt="Screenshot 2022-03-11 at 00 56 38" src="https://user-images.githubusercontent.com/99325840/157782510-ae751b02-c16b-493c-83c2-b595ad060670.png">
 
 
