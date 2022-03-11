@@ -34,20 +34,13 @@ def createreview():
 def addrestaurants():
     form = AddRestaurants()
     if request.method == "POST":
-        # if not form.validate_on_submit():
-        #     # message = "Please enter a valid name"
-        #     # try:
-            #     err = eval(f"form.name.errors[-1]")
-            # except IndexError:
-            #     err = ""
-            # message += err + ", "
-            # return render_template('add.html', form = form, message = message)
-        new_restaurants = Restaurants(
-            name = form.name.data,
-            cuisine = form.cuisine.data)
-        db.session.add(new_restaurants)
-        db.session.commit()
-        return  redirect(url_for("home"))
+        if form.validate_on_submit():
+            new_restaurants = Restaurants(
+                name = form.name.data,
+                cuisine = form.cuisine.data)
+            db.session.add(new_restaurants)
+            db.session.commit()
+            return  redirect(url_for("home"))
     return render_template('addrestaurants.html', title="Add a Restaurant", form = form)
         
 
